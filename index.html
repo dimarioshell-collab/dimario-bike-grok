@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dimario Bike Master — Дистанційна збірка, ремонт і апгрейд гірських велосипедів | Україна</title>
+  <meta name="description" content="Авторська дистанційна збірка, ремонт і апгрейд MTB, Downhill, Freeride велосипедів по всій Україні. 3D-конструктор, онлайн-консультації, сертифікований майстер." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Dimario Bike Master — Дмитро Сизов" />
+  <link rel="canonical" href="https://dimario.online/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:title" content="Dimario Bike Master — Дистанційна збірка гірських велосипедів" />
+  <meta property="og:description" content="Збираю велосипед під вас — під стиль їзди, тіло і бюджет. 3D-конструктор + онлайн-підтримка по всій Україні." />
+  <meta property="og:image" content="public/images/Me%20Kona.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="alternate" hreflang="ru" href="https://dimario.online/" />
+  <link rel="alternate" hreflang="uk" href="https://dimario.online/?lang=ua" />
+  <link rel="alternate" hreflang="en" href="https://dimario.online/?lang=en" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{accent:'#D4AF37',teal:'#0D9488',dark:'#0a0a0a',cream:'#f5f0e8'},fontFamily:{sans:['Inter','system-ui','sans-serif'],display:['Space Grotesk','system-ui','sans-serif']}}}}</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Dimario Bike Master","telephone":"+380631446701","email":"dimarioshell@gmail.com","url":"https://dimario.online","address":{"@type":"PostalAddress","addressCountry":"UA"},"sameAs":["https://t.me/+YOs8HjJgr9hkMWZi","https://t.me/+SpzKmo1Z16syNmIy"]}</script>
+  <style>
+    body{font-family:'Inter',system-ui,sans-serif}.font-display{font-family:'Space Grotesk',system-ui,sans-serif}
+    .hero-gradient{background:linear-gradient(135deg,#0a0a0a 0%,#1a1a1a 50%,#0f0f0f 100%)}
+    .accent-glow{box-shadow:0 0 40px rgba(212,175,55,.3)}.bike-card:hover{transform:translateY(-8px)}
+    .avatar-pulse{animation:pulse 2s infinite}@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(13,148,136,.5)}50%{box-shadow:0 0 0 15px rgba(13,148,136,0)}}
+    .lang-btn.active{background:#D4AF37;color:#0a0a0a}.teal-accent{color:#0D9488}
+  </style>
+</head>
+<body class="bg-dark text-cream antialiased">
+<header class="fixed top-0 left-0 right-0 z-50 bg-dark/90 backdrop-blur-md border-b border-white/10">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <a href="#" class="flex items-center gap-2">
+      <div class="w-10 h-10 rounded-full bg-accent border-2 border-teal-500 flex items-center justify-center font-display font-bold text-dark text-lg">D</div>
+      <div><div class="font-display font-bold text-lg leading-tight">DIMARIO</div><div class="text-[10px] uppercase tracking-widest text-cream/60" data-i18n="header.subtitle">дистанційна майстерня</div></div>
+    </a>
+    <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+      <a href="#how" class="hover:text-accent transition" data-i18n="nav.how">Як працює</a>
+      <a href="#services" class="hover:text-accent transition" data-i18n="nav.services">Послуги</a>
+      <a href="#works" class="hover:text-accent transition" data-i18n="nav.works">Роботи</a>
+      <a href="#master" class="hover:text-accent transition" data-i18n="nav.master">Майстер</a>
+      <a href="#faq" class="hover:text-accent transition">FAQ</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <div class="flex rounded-full border border-white/20 overflow-hidden text-xs">
+        <button onclick="setLang('ru')" class="lang-btn px-2.5 py-1 active" id="lang-ru">RU</button>
+        <button onclick="setLang('ua')" class="lang-btn px-2.5 py-1" id="lang-ua">UA</button>
+        <button onclick="setLang('en')" class="lang-btn px-2.5 py-1" id="lang-en">EN</button>
+      </div>
+      <a href="https://t.me/+SpzKmo1Z16syNmIy" target="_blank" class="hidden sm:inline-flex items-center gap-2 bg-accent hover:bg-yellow-600 text-dark font-semibold px-4 py-2 rounded-full text-sm transition"><span data-i18n="header.cta">Записатися</span></a>
+    </div>
+  </div>
+</header>
+
+<section class="relative min-h-screen flex items-center hero-gradient pt-16 overflow-hidden">
+  <div class="absolute inset-0 opacity-30"><img src="public/images/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg" alt="Mountains" class="w-full h-full object-cover"></div>
+  <div class="absolute inset-0 bg-gradient-to-r from-dark via-dark/80 to-transparent"></div>
+  <div class="relative max-w-7xl mx-auto px-4 py-20 grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <div class="flex flex-wrap gap-2 mb-6 text-xs uppercase tracking-wider">
+        <span class="px-3 py-1 rounded-full border border-white/20" data-i18n="hero.tag1">Ремонт</span>
+        <span class="px-3 py-1 rounded-full border border-white/20" data-i18n="hero.tag2">Дистанційно</span>
+        <span class="px-3 py-1 rounded-full bg-accent/20 text-accent border border-accent/40" data-i18n="hero.tag3">Вся Україна</span>
+        <span class="px-3 py-1 rounded-full border border-white/20" data-i18n="hero.tag4">Збірка / Апгрейд</span>
+      </div>
+      <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+        <span data-i18n="hero.title1">Ремонт і авторська</span><br>
+        <span class="text-accent" data-i18n="hero.title2">збірка велосипедів</span><br>
+        <span class="text-2xl sm:text-3xl font-medium text-cream/80" data-i18n="hero.title3">— під вас, дистанційно</span>
+      </h1>
+      <p class="text-lg text-cream/70 mb-8 max-w-xl" data-i18n="hero.desc">Збираю велосипеди під вас — під ваш стиль їзди, тіло, бюджет і мрію. Онлайн-консультація і готовий список запчастин. Жодної зайвої деталі.</p>
+      <div class="flex flex-wrap gap-4">
+        <button onclick="openChat()" class="inline-flex items-center gap-2 bg-accent hover:bg-yellow-600 text-dark font-bold px-6 py-3.5 rounded-full transition accent-glow"><span data-i18n="hero.btnChat">Поговорити з майстром</span></button>
+        <a href="#contact" class="inline-flex items-center gap-2 border border-white/30 hover:border-accent hover:text-accent px-6 py-3.5 rounded-full transition"><span data-i18n="header.cta">Записатися</span></a>
+      </div>
+      <div class="mt-10 flex gap-8 text-sm">
+        <div><div class="text-2xl font-bold text-accent">10+</div><div class="text-cream/50" data-i18n="stats.builds">зібраних байків</div></div>
+        <div><div class="text-2xl font-bold text-accent">100%</div><div class="text-cream/50" data-i18n="stats.online">онлайн-формат</div></div>
+        <div><div class="text-2xl font-bold text-accent">UA</div><div class="text-cream/50" data-i18n="stats.ua">по всій Україні</div></div>
+      </div>
+    </div>
+    <div class="relative">
+      <img src="public/images/Me Kona.jpg" alt="Dimario" class="rounded-2xl shadow-2xl w-full max-w-md mx-auto border border-white/10">
+      <div class="absolute -bottom-4 -left-4 bg-dark/90 border border-white/10 rounded-xl p-4 backdrop-blur">
+        <div class="text-xs text-cream/60" data-i18n="hero.cert">Сертифікований веломеханік</div>
+        <div class="font-semibold">Велопланета + Veliki.ua</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="py-24 bg-dark">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="font-display text-3xl sm:text-4xl font-bold mb-4" data-i18n="how.title">Як працює дистанційна збірка</h2>
+      <p class="text-cream/60 max-w-2xl mx-auto" data-i18n="how.subtitle">Ви можете бути в будь-якому куточку України — байк все одно збереться правильно</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-accent/50 transition">
+        <div class="text-4xl font-display font-bold text-accent/40 mb-4">01</div>
+        <h3 class="font-semibold text-xl mb-2" data-i18n="how.s1title">Знайомство</h3>
+        <p class="text-cream/60 text-sm" data-i18n="how.s1desc">Пишете в Telegram або телефонуєте. Розповідаєте, де катаєтесь, досвід, бюджет, мрія.</p>
+        <div class="mt-4 text-xs text-accent" data-i18n="how.s1time">Telegram або дзвінок</div>
+      </div>
+      <div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-accent/50 transition">
+        <div class="text-4xl font-display font-bold text-accent/40 mb-4">02</div>
+        <h3 class="font-semibold text-xl mb-2" data-i18n="how.s2title">Технічне завдання</h3>
+        <p class="text-cream/60 text-sm" data-i18n="how.s2desc">Складаю специфікацію байка — рама, компоненти, розміри. Пояснюю кожен вибір простою мовою.</p>
+        <div class="mt-4 text-xs text-accent" data-i18n="how.s2time">1–3 дні</div>
+      </div>
+      <div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-accent/50 transition">
+        <div class="text-4xl font-display font-bold text-accent/40 mb-4">03</div>
+        <h3 class="font-semibold text-xl mb-2" data-i18n="how.s3title">Список деталей</h3>
+        <p class="text-cream/60 text-sm" data-i18n="how.s3desc">Отримуєте повний список із посиланнями на магазини. Знаєте точно, скільки і за що платите.</p>
+        <div class="mt-4 text-xs text-accent" data-i18n="how.s3time">залежить від доставки</div>
+      </div>
+      <div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-accent/50 transition">
+        <div class="text-4xl font-display font-bold text-accent/40 mb-4">04</div>
+        <h3 class="font-semibold text-xl mb-2" data-i18n="how.s4title">Підтримка на збірці</h3>
+        <p class="text-cream/60 text-sm" data-i18n="how.s4desc">Збираєте з моєю підтримкою онлайн (фото/відео) або несете ТЗ у будь-яку майстерню.</p>
+        <div class="mt-4 text-xs text-accent" data-i18n="how.s4time">на зв'язку в Telegram</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="py-24 bg-[#111]">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="font-display text-3xl sm:text-4xl font-bold mb-4" data-i18n="services.title">Послуги та ціни</h2>
+      <p class="text-cream/60" data-i18n="services.note">Ціни — за роботу майстра, без вартості комплектуючих. Перша консультація в Telegram — безкоштовно.</p>
+    </div>
+    <div class="space-y-3 max-w-3xl mx-auto">
+      <div class="bg-white/5 border border-white/10 rounded-xl p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div><div class="font-semibold text-lg" data-i18n="services.s1">Авторська збірка</div><div class="text-sm text-cream/50" data-i18n="services.s1desc">Ключова послуга — повний підбір і супровід</div></div>
+        <div class="text-accent font-bold" data-i18n="services.s1price">за домовленістю</div>
+      </div>
+      <div class="bg-white/5 border border-white/10 rounded-xl p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div><div class="font-semibold text-lg" data-i18n="services.s2">Онлайн-консультація</div><div class="text-sm text-cream/50" data-i18n="services.s2desc">До 60 хвилин</div></div>
+        <div class="text-accent font-bold">від 300 ₴</div>
+      </div>
+      <div class="bg-white/5 border border-white/10 rounded-xl p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div><div class="font-semibold text-lg" data-i18n="services.s3">Підбір компонентів</div><div class="text-sm text-cream/50" data-i18n="services.s3desc">1–3 дні</div></div>
+        <div class="text-accent font-bold">від 800 ₴</div>
+      </div>
+      <div class="bg-white/5 border border-white/10 rounded-xl p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div><div class="font-semibold text-lg" data-i18n="services.s4">Апгрейд байка</div><div class="text-sm text-cream/50" data-i18n="services.s4desc">Аудит + рекомендації</div></div>
+        <div class="text-accent font-bold">від 500 ₴</div>
+      </div>
+      <div class="bg-white/5 border border-white/10 rounded-xl p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div><div class="font-semibold text-lg" data-i18n="services.s5">Аудит покупки б/у</div><div class="text-sm text-cream/50" data-i18n="services.s5desc">За фото / відео</div></div>
+        <div class="text-accent font-bold" data-i18n="services.s5price">за запитом</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="works" class="py-24 bg-[#111]">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="font-display text-3xl sm:text-4xl font-bold mb-4" data-i18n="works.title">Мої роботи</h2>
+      <p class="text-cream/60" data-i18n="works.subtitle">Реальні проєкти — від бюджетних збірок до преміум-білдів</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bike-card bg-white/5 border border-teal-500/40 rounded-2xl overflow-hidden transition duration-300 hover:border-teal-400">
+        <img src="public/images/Fatbike.jpg" alt="Fatbike" class="w-full h-80 object-contain bg-[#0a0a0a]">
+        <div class="p-5"><div class="text-xs text-accent uppercase tracking-wider mb-1">Fatbike</div><h3 class="font-semibold text-lg">Custom Fatbike</h3></div>
+      </div>
+      <div class="bike-card bg-white/5 border border-teal-500/40 rounded-2xl overflow-hidden transition duration-300 hover:border-teal-400">
+        <img src="public/images/Hammer%20S2000.jpg" alt="Hammer S2000" class="w-full h-80 object-contain bg-[#0a0a0a]">
+        <div class="p-5"><div class="text-xs text-accent uppercase tracking-wider mb-1">Hardtail · Enduro</div><h3 class="font-semibold text-lg">Hammer S2000</h3></div>
+      </div>
+      <div class="bike-card bg-white/5 border border-teal-500/40 rounded-2xl overflow-hidden transition duration-300 hover:border-teal-400">
+        <img src="public/images/Kona%20Supreame.jpg" alt="Kona Supreme" class="w-full h-80 object-contain bg-[#0a0a0a]">
+        <div class="p-5"><div class="text-xs text-accent uppercase tracking-wider mb-1">Full Suspension · Freeride</div><h3 class="font-semibold text-lg">Kona Supreme Four</h3></div>
+      </div>
+      <div class="bike-card bg-white/5 border border-teal-500/40 rounded-2xl overflow-hidden transition duration-300 hover:border-teal-400">
+        <img src="public/images/Magellan.jpg" alt="Magellan" class="w-full h-80 object-contain bg-[#0a0a0a]">
+        <div class="p-5"><div class="text-xs text-accent uppercase tracking-wider mb-1">Hardtail · Enduro</div><h3 class="font-semibold text-lg">Magellan Polar X</h3></div>
+      </div>
+      <div class="bike-card bg-white/5 border border-teal-500/40 rounded-2xl overflow-hidden transition duration-300 hover:border-teal-400">
+        <img src="public/images/MagellanSid.jpg" alt="Magellan SID" class="w-full h-80 object-contain bg-[#0a0a0a]">
+        <div class="p-5"><div class="text-xs text-accent uppercase tracking-wider mb-1">Hardtail · Dirt / XC</div><h3 class="font-semibold text-lg">Magellan + RockShox SID</h3></div>
+      </div>
+      <div class="bike-card bg-white/5 border border-teal-500/40 rounded-2xl overflow-hidden transition duration-300 hover:border-teal-400">
+        <video controls class="w-full h-80 object-contain bg-black" poster="public/images/unsplash.jpg">
+          <source src="public/video/Spesialized%20big%20hit.mp4" type="video/mp4">
+        </video>
+        <div class="p-5"><div class="text-xs text-accent uppercase tracking-wider mb-1">Full Suspension</div><h3 class="font-semibold text-lg">Specialized Big Hit</h3></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="master" class="py-24 bg-dark">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid lg:grid-cols-2 gap-10 items-stretch">
+      <div class="flex flex-col">
+        <h2 class="font-display text-3xl sm:text-4xl font-bold mb-6" data-i18n="master.title">Майстер за верстатом</h2>
+        <p class="text-lg text-cream/80 mb-4" data-i18n="master.intro">Мене звуть Дмитро. У майстерні — Dimario. Захоплююся велосипедами не як хобі, а як справжнім ремеслом.</p>
+        <p class="text-cream/60 mb-6" data-i18n="master.desc">Кожен байк, який я збираю — це не просто набір деталей, а «велосипед мрії» під конкретну людину. Пройшов курси веломеханіка у «Велопланеті» та Veliki.ua.</p>
+        <div class="grid grid-cols-2 gap-4 mb-6">
+          <div class="bg-white/5 rounded-xl p-4 text-center border border-teal-500/30"><div class="text-2xl font-bold text-accent">10+</div><div class="text-xs text-cream/50" data-i18n="stats.builds">зібраних байків</div></div>
+          <div class="bg-white/5 rounded-xl p-4 text-center border border-teal-500/30"><div class="text-2xl font-bold text-accent">2</div><div class="text-xs text-cream/50" data-i18n="master.certs">сертифікати</div></div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-auto">
+          <img src="public/images/BikePlanet.jpg" alt="Сертифікат Велопланета" class="w-full rounded-xl border border-teal-500/40 object-contain bg-white/5 p-2">
+          <img src="public/images/Veliki.ua.jpg" alt="Сертифікат Veliki.ua" class="w-full rounded-xl border border-teal-500/40 object-contain bg-white/5 p-2">
+        </div>
+      </div>
+      <div class="relative min-h-[480px] lg:min-h-full">
+        <img src="public/images/me%20dirt%20.jpg" alt="Дмитро" class="absolute inset-0 rounded-2xl w-full h-full object-cover object-top border border-teal-500/40">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="py-24 bg-[#111]">
+  <div class="max-w-3xl mx-auto px-4">
+    <h2 class="font-display text-3xl font-bold text-center mb-12" data-i18n="faq.title">Часті запитання</h2>
+    <div class="space-y-4" id="faq-list"></div>
+  </div>
+</section>
+
+<section id="contact" class="py-24 bg-dark">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="font-display text-3xl sm:text-4xl font-bold mb-4" data-i18n="contact.title">Готові почати?</h2>
+    <p class="text-cream/60 mb-10" data-i18n="contact.subtitle">Напишіть або зателефонуйте — обговоримо ваш майбутній байк. Перша консультація безкоштовна.</p>
+    <div class="flex flex-wrap justify-center gap-4 mb-12">
+      <a href="https://t.me/+SpzKmo1Z16syNmIy" target="_blank" class="inline-flex items-center gap-3 bg-teal-600 hover:bg-teal-700 text-white font-semibold px-6 py-3.5 rounded-full transition">Telegram (консультація)</a>
+      <a href="https://t.me/+YOs8HjJgr9hkMWZi" target="_blank" class="inline-flex items-center gap-3 bg-accent hover:bg-yellow-600 text-dark font-semibold px-6 py-3.5 rounded-full transition">Telegram (збірка)</a>
+      <a href="https://wa.me/380631446701" target="_blank" class="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-white font-semibold px-6 py-3.5 rounded-full transition">WhatsApp 063 144 67 01</a>
+      <a href="mailto:dimarioshell@gmail.com" class="inline-flex items-center gap-3 border border-white/30 hover:border-accent hover:text-accent px-6 py-3.5 rounded-full transition">dimarioshell@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<footer class="border-t border-white/10 py-10">
+  <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-cream/50">
+    <div>© 2026 Dimario Bike Master. <span data-i18n="footer.rights">Усі права захищені.</span></div>
+    <div class="flex gap-6">
+      <a href="https://t.me/+SpzKmo1Z16syNmIy" class="hover:text-accent">Telegram</a>
+      <a href="https://wa.me/380631446701" class="hover:text-accent">WhatsApp</a>
+      <a href="mailto:dimarioshell@gmail.com" class="hover:text-accent">Email</a>
+    </div>
+  </div>
+</footer>
+
+<div id="chat-avatar" class="fixed bottom-6 right-6 z-50 cursor-pointer avatar-pulse" onclick="openChat()">
+  <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-teal-500 shadow-lg">
+    <img src="public/images/Me%20Kona.jpg" alt="Chat" class="w-full h-full object-cover">
+  </div>
+</div>
+
+<div id="chat-window" class="fixed bottom-24 right-6 w-80 sm:w-96 bg-[#1a1a1a] border border-white/10 rounded-2xl shadow-2xl z-50 hidden flex-col overflow-hidden" style="height:480px">
+  <div class="bg-accent text-dark px-4 py-3 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <img src="public/images/Me%20Kona.jpg" class="w-9 h-9 rounded-full object-cover">
+      <div><div class="font-semibold text-sm">Dimario</div><div class="text-xs opacity-80" data-i18n="chat.status">онлайн · відповідає швидко</div></div>
+    </div>
+    <button onclick="closeChat()" class="text-dark/70 hover:text-dark text-xl leading-none">&times;</button>
+  </div>
+  <div id="chat-messages" class="flex-1 overflow-y-auto p-4 space-y-3 text-sm">
+    <div class="bg-white/10 rounded-2xl rounded-tl-sm px-4 py-2.5 max-w-[85%]" data-i18n="chat.welcome">Привіт! Я Дмитро. Чим можу допомогти?</div>
+  </div>
+  <div class="p-3 border-t border-white/10 flex gap-2">
+    <input id="chat-input" type="text" placeholder="Напишіть повідомлення..." class="flex-1 bg-dark border border-white/20 rounded-full px-4 py-2 text-sm outline-none focus:border-accent" onkeydown="if(event.key==='Enter')sendChat()">
+    <button onclick="sendChat()" class="bg-accent text-dark w-10 h-10 rounded-full flex items-center justify-center font-bold">→</button>
+  </div>
+</div>
+
+<script>
+const translations={ru:{"header.subtitle":"дистанционная мастерская","nav.how":"Как работает","nav.services":"Услуги","nav.config":"3D-конструктор","nav.works":"Работы","nav.master":"Мастер","header.cta":"Записаться","hero.tag1":"Ремонт","hero.tag2":"Дистанционно","hero.tag3":"Вся Украина","hero.tag4":"Сборка / Апгрейд","hero.title1":"Ремонт и авторская","hero.title2":"сборка велосипедов","hero.title3":"— под вас, дистанционно","hero.desc":"Собираю велосипеды под вас — под ваш стиль езды, тело, бюджет и мечту. Онлайн-консультация и готовый список запчастей.","hero.btn3d":"Собрать байк в 3D","hero.btnChat":"Поговорить с мастером","hero.cert":"Сертифицированный веломеханик","stats.builds":"собранных байков","stats.online":"онлайн-формат","stats.ua":"по всей Украине","how.title":"Как работает дистанционная сборка","how.subtitle":"Вы можете быть в любом уголке Украины — байк всё равно соберётся правильно","how.s1title":"Знакомство","how.s1desc":"Пишете в Telegram или звоните. Рассказываете, где катаетесь, опыт, бюджет, мечта.","how.s1time":"Telegram или звонок","how.s2title":"Техническое задание","how.s2desc":"Составляю спецификацию байка — рама, компоненты, размеры.","how.s2time":"1–3 дня","how.s3title":"Список деталей","how.s3desc":"Получаете полный список со ссылками на магазины.","how.s3time":"зависит от доставки","how.s4title":"Поддержка на сборке","how.s4desc":"Собираете с моей поддержкой онлайн или несёте ТЗ в любую мастерскую.","how.s4time":"на связи в Telegram","services.title":"Услуги и цены","services.note":"Цены — за работу мастера. Первая консультация бесплатна.","services.s1":"Авторская сборка","services.s1desc":"Ключевая услуга","services.s1price":"по договорённости","services.s2":"Онлайн-консультация","services.s2desc":"До 60 минут","services.s3":"Подбор компонентов","services.s3desc":"1–3 дня","services.s4":"Апгрейд байка","services.s4desc":"Аудит + рекомендации","services.s5":"Аудит покупки б/у","services.s5desc":"По фото / видео","services.s5price":"по запросу","config.title":"3D-конструктор велосипеда","config.subtitle":"Соберите байк узел за узлом и посмотрите, как он будет выглядеть.","config.hint":"Вращайте мышкой. Это демо-версия.","config.panel":"Выбор узлов","config.frame":"Рама","config.wheel":"Колёса","config.travel":"Ход вилки","config.color":"Цвет","config.estimate":"Ориентировочная стоимость работы","config.send":"Отправить спецификацию в Telegram","works.title":"Мои работы","works.subtitle":"Реальные проекты","master.title":"Мастер за верстаком","master.intro":"Меня зовут Дмитрий. В мастерской — Dimario.","master.desc":"Каждый байк — «велосипед мечты» под конкретного человека. Курсы в Велопланете и Veliki.ua.","master.certs":"сертификата","faq.title":"Частые вопросы","contact.title":"Готовы начать?","contact.subtitle":"Напишите или позвоните. Первая консультация бесплатна.","footer.rights":"Все права защищены.","chat.status":"онлайн · отвечает быстро","chat.welcome":"Привет! Я Дмитрий. Чем могу помочь?"},ua:{"header.subtitle":"дистанційна майстерня","nav.how":"Як працює","nav.services":"Послуги","nav.config":"3D-конструктор","nav.works":"Роботи","nav.master":"Майстер","header.cta":"Записатися","hero.tag1":"Ремонт","hero.tag2":"Дистанційно","hero.tag3":"Вся Україна","hero.tag4":"Збірка / Апгрейд","hero.title1":"Ремонт і авторська","hero.title2":"збірка велосипедів","hero.title3":"— під вас, дистанційно","hero.desc":"Збираю велосипеди під вас — під ваш стиль їзди, тіло, бюджет і мрію.","hero.btn3d":"Зібрати байк у 3D","hero.btnChat":"Поговорити з майстром","hero.cert":"Сертифікований веломеханік","stats.builds":"зібраних байків","stats.online":"онлайн-формат","stats.ua":"по всій Україні","how.title":"Як працює дистанційна збірка","how.subtitle":"Ви можете бути в будь-якому куточку України","how.s1title":"Знайомство","how.s1desc":"Пишете в Telegram або телефонуєте.","how.s1time":"Telegram або дзвінок","how.s2title":"Технічне завдання","how.s2desc":"Складаю специфікацію байка.","how.s2time":"1–3 дні","how.s3title":"Список деталей","how.s3desc":"Повний список із посиланнями.","how.s3time":"залежить від доставки","how.s4title":"Підтримка на збірці","how.s4desc":"Збираєте з моєю підтримкою онлайн.","how.s4time":"на зв'язку в Telegram","services.title":"Послуги та ціни","services.note":"Ціни — за роботу майстра. Перша консультація безкоштовно.","services.s1":"Авторська збірка","services.s1desc":"Ключова послуга","services.s1price":"за домовленістю","services.s2":"Онлайн-консультація","services.s2desc":"До 60 хвилин","services.s3":"Підбір компонентів","services.s3desc":"1–3 дні","services.s4":"Апгрейд байка","services.s4desc":"Аудит + рекомендації","services.s5":"Аудит покупки б/у","services.s5desc":"За фото / відео","services.s5price":"за запитом","config.title":"3D-конструктор велосипеда","config.subtitle":"Зберіть байк вузол за вузлом.","config.hint":"Обертайте мишкою. Демо-версія.","config.panel":"Вибір вузлів","config.frame":"Рама","config.wheel":"Колеса","config.travel":"Хід вилки","config.color":"Колір","config.estimate":"Орієнтовна вартість роботи","config.send":"Надіслати специфікацію в Telegram","works.title":"Мої роботи","works.subtitle":"Реальні проєкти","master.title":"Майстер за верстатом","master.intro":"Мене звуть Дмитро. У майстерні — Dimario.","master.desc":"Кожен байк — «велосипед мрії». Курси у Велопланеті та Veliki.ua.","master.certs":"сертифікати","faq.title":"Часті запитання","contact.title":"Готові почати?","contact.subtitle":"Напишіть або зателефонуйте. Перша консультація безкоштовна.","footer.rights":"Усі права захищені.","chat.status":"онлайн · відповідає швидко","chat.welcome":"Привіт! Я Дмитро. Чим можу допомогти?"},en:{"header.subtitle":"remote workshop","nav.how":"How it works","nav.services":"Services","nav.config":"3D Builder","nav.works":"Builds","nav.master":"Master","header.cta":"Book now","hero.tag1":"Repair","hero.tag2":"Remote","hero.tag3":"All Ukraine","hero.tag4":"Build / Upgrade","hero.title1":"Repair & custom","hero.title2":"bike builds","hero.title3":"— tailored for you, remotely","hero.desc":"I build bikes for you — matching your riding style, body, budget and dream.","hero.btn3d":"Build your bike in 3D","hero.btnChat":"Talk to the master","hero.cert":"Certified bike mechanic","stats.builds":"builds completed","stats.online":"online format","stats.ua":"across Ukraine","how.title":"How remote building works","how.subtitle":"You can be anywhere in Ukraine","how.s1title":"Introduction","how.s1desc":"Message me on Telegram or call.","how.s1time":"Telegram or call","how.s2title":"Technical brief","how.s2desc":"I create a full bike specification.","how.s2time":"1–3 days","how.s3title":"Parts list","how.s3desc":"Complete list with shop links.","how.s3time":"depends on delivery","how.s4title":"Build support","how.s4desc":"Assemble with my online support.","how.s4time":"available on Telegram","services.title":"Services & prices","services.note":"Prices for master's work. First consultation free.","services.s1":"Custom build","services.s1desc":"Key service","services.s1price":"by agreement","services.s2":"Online consultation","services.s2desc":"Up to 60 minutes","services.s3":"Component selection","services.s3desc":"1–3 days","services.s4":"Bike upgrade","services.s4desc":"Audit + recommendations","services.s5":"Used bike audit","services.s5desc":"By photo / video","services.s5price":"on request","config.title":"3D Bike Configurator","config.subtitle":"Assemble the bike node by node.","config.hint":"Rotate with mouse. Demo version.","config.panel":"Node selection","config.frame":"Frame","config.wheel":"Wheels","config.travel":"Fork travel","config.color":"Color","config.estimate":"Estimated work cost","config.send":"Send specification to Telegram","works.title":"My builds","works.subtitle":"Real projects","master.title":"The master at the workbench","master.intro":"My name is Dmytro. In the workshop — Dimario.","master.desc":"Every bike is a 'dream bike'. Courses at Veloplaneta and Veliki.ua.","master.certs":"certificates","faq.title":"FAQ","contact.title":"Ready to start?","contact.subtitle":"Message or call. First consultation is free.","footer.rights":"All rights reserved.","chat.status":"online · replies fast","chat.welcome":"Hi! I'm Dmytro. How can I help?"}};
+let currentLang='ru';
+function setLang(lang){currentLang=lang;document.documentElement.lang=lang==='ua'?'uk':lang;document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));document.getElementById('lang-'+lang).classList.add('active');document.querySelectorAll('[data-i18n]').forEach(el=>{const key=el.getAttribute('data-i18n');if(translations[lang][key])el.textContent=translations[lang][key]});renderFAQ();localStorage.setItem('dimario-lang',lang)}
+const faqData={ru:[{q:"Как работает дистанционная сборка?",a:"Вы пишете в Telegram, рассказываете о стиле езды, росте, весе, бюджете. Я составляю ТЗ и полный список компонентов. Вы заказываете детали сами — с моей онлайн-поддержкой."},{q:"Почему выгоднее собирать дистанционно?",a:"Экспертный подбор без поездок, экономия на посредниках, байк именно под вас."},{q:"Нужно ли приезжать?",a:"Нет. Всё полностью дистанционно."},{q:"Какие гарантии совместимости?",a:"Я контролирую совместимость рамы, вилки, трансмиссии и тормозов."}],ua:[{q:"Як працює дистанційна збірка?",a:"Ви пишете в Telegram, розповідаєте про стиль їзди, зріст, вагу, бюджет. Я складаю ТЗ і список компонентів. Ви замовляєте деталі самі — з моєю онлайн-підтримкою."},{q:"Чому вигідніше збирати дистанційно?",a:"Експертний підбір без поїздок, економія, байк саме під вас."},{q:"Чи потрібно приїжджати?",a:"Ні. Все повністю дистанційно."},{q:"Які гарантії сумісності?",a:"Я контролюю сумісність рами, вилки, трансмісії та гальм."}],en:[{q:"How does remote building work?",a:"You message on Telegram, tell me about riding style, height, weight, budget. I create a full specification and parts list. You order parts yourself — with my online support."},{q:"Why is remote better?",a:"Expert selection without travel, save on middlemen, bike exactly for you."},{q:"Do I need to visit?",a:"No. Everything is fully remote."},{q:"Compatibility guarantees?",a:"I control compatibility of frame, fork, drivetrain and brakes."}]};
+function renderFAQ(){const list=document.getElementById('faq-list');list.innerHTML=faqData[currentLang].map((item,i)=>`<div class="bg-white/5 border border-white/10 rounded-xl overflow-hidden"><button onclick="toggleFaq(${i})" class="w-full text-left px-5 py-4 flex justify-between items-center font-medium"><span>${item.q}</span><span class="text-accent text-xl" id="faq-icon-${i}">+</span></button><div id="faq-a-${i}" class="hidden px-5 pb-4 text-cream/60 text-sm">${item.a}</div></div>`).join('')}
+function toggleFaq(i){const a=document.getElementById('faq-a-'+i);const icon=document.getElementById('faq-icon-'+i);a.classList.toggle('hidden');icon.textContent=a.classList.contains('hidden')?'+':'−'}
+function openChat(){document.getElementById('chat-window').classList.remove('hidden');document.getElementById('chat-window').classList.add('flex')}
+function closeChat(){document.getElementById('chat-window').classList.add('hidden');document.getElementById('chat-window').classList.remove('flex')}
+function sendChat(){const input=document.getElementById('chat-input');const text=input.value.trim();if(!text)return;const messages=document.getElementById('chat-messages');messages.innerHTML+=`<div class="bg-accent/20 text-right ml-auto rounded-2xl rounded-tr-sm px-4 py-2.5 max-w-[85%]">${text}</div>`;input.value='';setTimeout(()=>{let reply=currentLang==='ru'?"Напишите подробнее или переходите в Telegram.":currentLang==='ua'?"Напишіть детальніше або переходьте в Telegram.":"Tell me more or go to Telegram.";const lower=text.toLowerCase();if(lower.includes('цін')||lower.includes('цен')||lower.includes('price'))reply=currentLang==='en'?"Consultation from 300₴, selection from 800₴. First is free.":"Консультація від 300₴, підбір від 800₴. Перша безкоштовна.";if(lower.includes('сбор')||lower.includes('збір')||lower.includes('build'))reply="Telegram (збірка): https://t.me/+YOs8HjJgr9hkMWZi";messages.innerHTML+=`<div class="bg-white/10 rounded-2xl rounded-tl-sm px-4 py-2.5 max-w-[85%]">${reply}</div>`;messages.scrollTop=messages.scrollHeight},600)}
+let scene,camera,renderer,bikeGroup,frameMesh;
+function initThree(){const container=document.getElementById('three-container');if(!container||!window.THREE)return;document.getElementById('three-loading').style.display='none';scene=new THREE.Scene();scene.background=new THREE.Color(0x151515);camera=new THREE.PerspectiveCamera(45,container.clientWidth/container.clientHeight,0.1,1000);camera.position.set(2.5,1.2,3.5);camera.lookAt(0,0.5,0);renderer=new THREE.WebGLRenderer({antialias:true});renderer.setSize(container.clientWidth,container.clientHeight);renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));container.appendChild(renderer.domElement);const ambient=new THREE.AmbientLight(0xffffff,0.4);scene.add(ambient);const dir=new THREE.DirectionalLight(0xffffff,0.8);dir.position.set(5,10,7);scene.add(dir);bikeGroup=new THREE.Group();const frameMat=new THREE.MeshStandardMaterial({color:0x222222,metalness:0.6,roughness:0.4});frameMesh=new THREE.Mesh(new THREE.BoxGeometry(1.6,0.08,0.08),frameMat);frameMesh.position.set(0,0.6,0);bikeGroup.add(frameMesh);const seatTube=new THREE.Mesh(new THREE.CylinderGeometry(0.04,0.04,0.7,12),frameMat);seatTube.position.set(-0.5,0.9,0);bikeGroup.add(seatTube);const headTube=new THREE.Mesh(new THREE.CylinderGeometry(0.05,0.05,0.35,12),frameMat);headTube.position.set(0.7,0.85,0);headTube.rotation.z=-0.3;bikeGroup.add(headTube);const wheelGeo=new THREE.TorusGeometry(0.45,0.06,12,32);const wheelMat=new THREE.MeshStandardMaterial({color:0x111111,roughness:0.7});const frontWheel=new THREE.Mesh(wheelGeo,wheelMat);frontWheel.position.set(0.9,0.45,0);frontWheel.rotation.y=Math.PI/2;bikeGroup.add(frontWheel);const rearWheel=new THREE.Mesh(wheelGeo,wheelMat);rearWheel.position.set(-0.9,0.45,0);rearWheel.rotation.y=Math.PI/2;bikeGroup.add(rearWheel);const fork=new THREE.Mesh(new THREE.BoxGeometry(0.06,0.7,0.06),new THREE.MeshStandardMaterial({color:0x333333}));fork.position.set(0.85,0.7,0);bikeGroup.add(fork);const bar=new THREE.Mesh(new THREE.CylinderGeometry(0.025,0.025,0.8,8),new THREE.MeshStandardMaterial({color:0x222222}));bar.rotation.z=Math.PI/2;bar.position.set(0.75,1.15,0);bikeGroup.add(bar);const seat=new THREE.Mesh(new THREE.BoxGeometry(0.35,0.05,0.18),new THREE.MeshStandardMaterial({color:0x1a1a1a}));seat.position.set(-0.5,1.3,0);bikeGroup.add(seat);scene.add(bikeGroup);let isDragging=false,prevX=0,prevY=0;renderer.domElement.addEventListener('mousedown',e=>{isDragging=true;prevX=e.clientX;prevY=e.clientY});renderer.domElement.addEventListener('mouseup',()=>isDragging=false);renderer.domElement.addEventListener('mousemove',e=>{if(!isDragging)return;bikeGroup.rotation.y+=(e.clientX-prevX)*0.01;bikeGroup.rotation.x+=(e.clientY-prevY)*0.005;prevX=e.clientX;prevY=e.clientY});renderer.domElement.addEventListener('touchstart',e=>{isDragging=true;prevX=e.touches[0].clientX;prevY=e.touches[0].clientY});renderer.domElement.addEventListener('touchend',()=>isDragging=false);renderer.domElement.addEventListener('touchmove',e=>{if(!isDragging)return;bikeGroup.rotation.y+=(e.touches[0].clientX-prevX)*0.01;bikeGroup.rotation.x+=(e.touches[0].clientY-prevY)*0.005;prevX=e.touches[0].clientX;prevY=e.touches[0].clientY});function animate(){requestAnimationFrame(animate);if(!isDragging)bikeGroup.rotation.y+=0.003;renderer.render(scene,camera)}animate();window.addEventListener('resize',()=>{camera.aspect=container.clientWidth/container.clientHeight;camera.updateProjectionMatrix();renderer.setSize(container.clientWidth,container.clientHeight)})}
+function setBikeColor(hex){if(frameMesh)frameMesh.material.color.setHex(hex)}
+window.addEventListener('load',()=>{const saved=localStorage.getItem('dimario-lang')||'ru';setLang(saved);renderFAQ();setTimeout(initThree,300)});
+</script>
+</body>
+</html>
